@@ -31,7 +31,7 @@ public class JokeController {
 	   return "addJoke";
    }
 		   
-   @PostMapping("/joke_post")
+   @RequestMapping("/joke_post")
    public String joke_post(@RequestParam("firstname") String firstname,
                            @RequestParam("lastname") String lastname,
                            Model model){
